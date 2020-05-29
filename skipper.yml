@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    dataflow:
+      security:
+        authorization:
+          map-oauth-scopes: true
+security:
+ oauth2:
+   client:
+      client-id: skipper
+      client-secret: skipper
+      access-token-uri: http://127.0.0.1:8080/uaa/oauth/token
+      user-authorization-uri: http://127.0.0.1:8080/uaa/oauth/authorize
+   resource:
+      user-info-uri: http://127.0.0.1:8080/uaa/userinfo
+      token-info-uri: http://127.0.0.1:8080/uaa/check_token
