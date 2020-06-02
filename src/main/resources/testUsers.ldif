@@ -58,6 +58,26 @@ sn: Dietrich
 uid: marlene
 userPassword: supersecret
 
+dn: uid=admin,ou=otherpeople,dc=springframework,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Administrador 1
+sn: Usuario
+uid: administrador1
+userPassword: infotecpass190#
+
+dn: uid=admin,ou=otherpeople,dc=springframework,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Administrador 2
+sn: Usuario
+uid: administrador2
+userPassword: infotecpass1L0#
+
 dn: uid=joe,ou=otherpeople,dc=springframework,dc=org
 objectclass: top
 objectclass: person
@@ -125,6 +145,8 @@ cn: view
 ou: view
 member: uid=joe,ou=otherpeople,dc=springframework,dc=org
 member: uid=marlene,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrado1,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrado2,ou=otherpeople,dc=springframework,dc=org
 
 dn: cn=create,ou=groups,dc=springframework,dc=org
 objectclass: top
@@ -132,6 +154,8 @@ objectclass: groupOfNames
 cn: create
 ou: create
 member: uid=marlene,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrado1,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrado2,ou=otherpeople,dc=springframework,dc=org
 
 dn: cn=deploy,ou=groups,dc=springframework,dc=org
 objectclass: top
@@ -139,6 +163,9 @@ objectclass: groupOfNames
 cn: deploy
 ou: deploy
 member: uid=marlene,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrador1,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrador2,ou=otherpeople,dc=springframework,dc=org
+
 
 dn: cn=destroy,ou=groups,dc=springframework,dc=org
 objectclass: top
@@ -146,6 +173,9 @@ objectclass: groupOfNames
 cn: destroy
 ou: destroy
 member: uid=marlene,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrador1,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrador2,ou=otherpeople,dc=springframework,dc=org
+
 
 dn: cn=modify,ou=groups,dc=springframework,dc=org
 objectclass: top
@@ -153,6 +183,8 @@ objectclass: groupOfNames
 cn: modify
 ou: modify
 member: uid=marlene,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrador1,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrador2,ou=otherpeople,dc=springframework,dc=org
 
 dn: cn=schedule,ou=groups,dc=springframework,dc=org
 objectclass: top
@@ -160,6 +192,8 @@ objectclass: groupOfNames
 cn: schedule
 ou: schedule
 member: uid=marlene,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrador1,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrador2,ou=otherpeople,dc=springframework,dc=org
 
 dn: cn=manage,ou=groups,dc=springframework,dc=org
 objectclass: top
@@ -168,6 +202,8 @@ cn: manage
 ou: manage
 member: uid=joe,ou=otherpeople,dc=springframework,dc=org
 member: uid=marlene,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrador1,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrador2,ou=otherpeople,dc=springframework,dc=org
 
 dn: cn=managers,ou=groups,dc=springframework,dc=org
 objectclass: top
