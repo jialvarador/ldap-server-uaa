@@ -63,7 +63,7 @@ objectclass: top
 objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
-cn: Administrador 1
+cn: Administrador Uno
 sn: Usuario
 uid: administrador1
 userPassword: infotecpass190#
@@ -73,7 +73,7 @@ objectclass: top
 objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
-cn: Administrador 2
+cn: Administrador Dos
 sn: Usuario
 uid: administrador2
 userPassword: infotecpass1L0#
