@@ -63,12 +63,12 @@ objectclass: top
 objectclass: person
 objectclass: organizationalPerson
 objectclass: inetOrgPerson
-cn: Administrador Uno
+cn: Administrador Infotect
 sn: Usuario
-uid: administrador1
+uid: admin
 userPassword: infotecpass190#
 
-dn: uid=admin,ou=otherpeople,dc=springframework,dc=org
+dn: uid=administrador2,ou=otherpeople,dc=springframework,dc=org
 objectclass: top
 objectclass: person
 objectclass: organizationalPerson
@@ -145,8 +145,8 @@ cn: view
 ou: view
 member: uid=joe,ou=otherpeople,dc=springframework,dc=org
 member: uid=marlene,ou=otherpeople,dc=springframework,dc=org
-member: uid=administrado1,ou=otherpeople,dc=springframework,dc=org
-member: uid=administrado2,ou=otherpeople,dc=springframework,dc=org
+member: uid=admin,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrador2,ou=otherpeople,dc=springframework,dc=org
 
 dn: cn=create,ou=groups,dc=springframework,dc=org
 objectclass: top
@@ -154,8 +154,8 @@ objectclass: groupOfNames
 cn: create
 ou: create
 member: uid=marlene,ou=otherpeople,dc=springframework,dc=org
-member: uid=administrado1,ou=otherpeople,dc=springframework,dc=org
-member: uid=administrado2,ou=otherpeople,dc=springframework,dc=org
+member: uid=admin,ou=otherpeople,dc=springframework,dc=org
+member: uid=administrador2,ou=otherpeople,dc=springframework,dc=org
 
 dn: cn=deploy,ou=groups,dc=springframework,dc=org
 objectclass: top
@@ -163,7 +163,7 @@ objectclass: groupOfNames
 cn: deploy
 ou: deploy
 member: uid=marlene,ou=otherpeople,dc=springframework,dc=org
-member: uid=administrador1,ou=otherpeople,dc=springframework,dc=org
+member: uid=admin,ou=otherpeople,dc=springframework,dc=org
 member: uid=administrador2,ou=otherpeople,dc=springframework,dc=org
 
 
@@ -173,7 +173,7 @@ objectclass: groupOfNames
 cn: destroy
 ou: destroy
 member: uid=marlene,ou=otherpeople,dc=springframework,dc=org
-member: uid=administrador1,ou=otherpeople,dc=springframework,dc=org
+member: uid=admin,ou=otherpeople,dc=springframework,dc=org
 member: uid=administrador2,ou=otherpeople,dc=springframework,dc=org
 
 
@@ -183,7 +183,7 @@ objectclass: groupOfNames
 cn: modify
 ou: modify
 member: uid=marlene,ou=otherpeople,dc=springframework,dc=org
-member: uid=administrador1,ou=otherpeople,dc=springframework,dc=org
+member: uid=admin,ou=otherpeople,dc=springframework,dc=org
 member: uid=administrador2,ou=otherpeople,dc=springframework,dc=org
 
 dn: cn=schedule,ou=groups,dc=springframework,dc=org
@@ -192,7 +192,7 @@ objectclass: groupOfNames
 cn: schedule
 ou: schedule
 member: uid=marlene,ou=otherpeople,dc=springframework,dc=org
-member: uid=administrador1,ou=otherpeople,dc=springframework,dc=org
+member: uid=admin,ou=otherpeople,dc=springframework,dc=org
 member: uid=administrador2,ou=otherpeople,dc=springframework,dc=org
 
 dn: cn=manage,ou=groups,dc=springframework,dc=org
@@ -202,7 +202,7 @@ cn: manage
 ou: manage
 member: uid=joe,ou=otherpeople,dc=springframework,dc=org
 member: uid=marlene,ou=otherpeople,dc=springframework,dc=org
-member: uid=administrador1,ou=otherpeople,dc=springframework,dc=org
+member: uid=admin,ou=otherpeople,dc=springframework,dc=org
 member: uid=administrador2,ou=otherpeople,dc=springframework,dc=org
 
 dn: cn=managers,ou=groups,dc=springframework,dc=org
